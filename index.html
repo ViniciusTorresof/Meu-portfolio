@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Olá, eu sou Vinícius, desenvolvedor front-end.">
+    <link rel="shortcut icon" href="img/favicon-site.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Vinícius Tôrres | Dev Front-End</title>
+</head>
+<body>
+    <header class="cabecalho" id="header">
+        <div class="container-cabecalho">
+            <a href="index.html" class="cabecalho__logo--link" aria-label="link para página atual">
+                <img src="img/logo.svg" alt="Logotipo" class="cabecalho__logo">
+            </a>
+            <nav class="nav" id="nav">
+                <button id="botao-menu" aria-expanded="false" aria-controls="menu" aria-haspopup="true" aria-label="Abrir menu">
+                    <span id="menu-icone"></span>
+                </button>
+                <ul class="lista" id="menu" role="menu">
+                    <li class="itens"><a href="#home" class="itens--link">Home</a></li>
+                    <li class="itens"><a href="#sobre" class="itens--link">Sobre</a></li>
+                    <li class="itens"><a href="#conhecimento" class="itens--link">Conhecimento</a></li>
+                    <li class="itens"><a href="#projetos" class="itens--link">Projetos</a></li>
+                    <li class="itens"><a href="#contato" class="itens--link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="secao_principal" id="home">
+                <div class="container-principal">
+                    <p class="container__texto--destaque">Tecnologia como um ativo
+                        <i class="fa-solid fa-bolt icone"></i>
+                    </p>
+                    <p class="container__apresentacao--texto">Olá, eu sou o <span class="container__apresentacao--destaque">Vinícius</span></p>
+                    <h1 class="container__titulo" id="titulo__secao-principal">Front-End Developer</h1>
+                    <p class="container__texto--explicativo">Fico feliz em vê-lo (a) por aqui. Espero que aproveite o conteúdo e que eu possa te ajudar de alguma forma.</p>
+                    <a href="#sobre"><button class="container__botao" aria-label="Conhecer Vinícius">Conhecer Vinícius</button></a>
+                    <nav class="midia-social__nav">
+                        <ul class="midia-social__lista" role="navigation">
+                            <li class="social__itens">
+                                <a href="https://github.com/ViniciusTorresof" class="social__itens--link" target="_blank"><i class="fa-brands fa-github  icone-github"></i></a>
+                            </li>
+                            <li class="social__itens">
+                                <a href="https://www.linkedin.com/in/viniciustorresoficial/" class="social__itens--link" target="_blank"><i class="fa-brands fa-linkedin icone-linkedin"></i></a>
+                            </li>
+                            <li class="social__itens">
+                                <a href="https://www.instagram.com/viniciuss.dev/" class="social__itens--link" target="_blank"><i class="fa-brands fa-instagram icone-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+        </section>
+        <section class="secao_sobre" id="sobre">
+            <div class="container-sobre">
+                <div class="bloco-descricao">
+                        <div class="sobre-descricao">
+                            <p class="sobre__titulo--destaque">Personalidade</p>
+                            <h3 class="sobre__titulo">Um pouco sobre mim</h3>
+                            <p class="sobre__texto">Prazer, meu nome é Vinícius e tenho 20 anos. Sou desenvolvedor Front-End Júnior a mais de 
+                                1 ano. Sou apaixonado por tecnologia e por resolver problemas. Espero poder fazer parte da sua equipe, 
+                                poder aprender e agregar de alguma forma. Atualmente estou na busca pela primeira oportunidade de emprego,
+                                mas até lá estou fazendo as minhas oportunidades e buscando agregar de alguma forma 
+                                no mercado de trabalho e na vida das pessoas. Álias, estamos aqui para servir, agregar e contribuir !</p>
+                        </div>
+                        <a href="./../doc/Vinicius Torres CV.docx" download="Vinicius Torres Cv" aria-label="link de download do meu curriculo">
+                            <button class="botao-cv" aria-label="Baixar Currículo de Vinícius">Baixar CV</button>
+                        </a>
+                </div>
+            </div>
+        </section>
+        <section class="secao_conhecimento" id="conhecimento">
+                <section class="container-skill">
+                    <header class="cabecalho-skill">
+                        <h2 class="cabecalho-skill__titulo">Conhecimento</h2>
+                        <p class="cabecalho-skill__descricao">Tecnologias que eu utilizo nos meus projetos.</p>
+                    </header>
+                    <ul class="main-skill">
+                        <li class="card-skill">
+                            <i class="fa-brands fa-html5 icone-tecnologia icone-html"></i>
+                            <h3 class="card-skill__titulo">Html 5</h3>
+                            <p class="card-skill__descricao">A Linguagem de Marcação de Hipertexto (HTML) é a linguagem principal da web.</p>
+                        </li>
+                        <li class="card-skill">
+                            <i class="fa-brands fa-css3-alt icone-tecnologia icone-css"></i>
+                            <h3 class="card-skill__titulo">Css 3</h3>
+                            <p class="card-skill__descricao">Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web.</p>
+                        </li>
+                        <li class="card-skill">
+                            <i class="fa-brands fa-js icone-tecnologia icone-js"></i>
+                            <h3 class="card-skill__titulo">JavaScript</h3>
+                            <p class="card-skill__descricao">JavaScript é uma linguagem de programação de script em alto nível com tipagem dinâmica fraca e multiparadigma.</p>
+                        </li>
+                        <li class="card-skill">
+                            <i class="fa-brands fa-js icone-tecnologia icone-ts"></i>
+                            <h3 class="card-skill__titulo">TypeScript</h3>
+                            <p class="card-skill__descricao">TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft.</p>
+                        </li>
+                        <li class="card-skill">
+                            <i class="fa-brands fa-react icone-tecnologia icone-react"></i>
+                            <h3 class="card-skill__titulo">React</h3>
+                            <p class="card-skill__descricao">O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.</p>
+                        </li>
+                        <li class="card-skill">
+                            <i class="fa-brands fa-react icone-tecnologia icone-react"></i>
+                            <h3 class="card-skill__titulo">React Native</h3>
+                            <p class="card-skill__descricao">React Native é uma biblioteca Javascript e é usada para desenvolver aplicativos.</p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="secao_servico">
+                    <header class="cabecalho-servico">
+                        <span class="cabecalho-servico__destaque"></i>Agregar valor</span>
+                        <h2 class="cabecalho-servico__titulo">Como eu poderia resolver o seu problema ?</h2>
+                        <p class="cabecalho-servico__descricao">Seja ousado em suas metas.</p>
+                    </header>
+                    <div class="container-servico">
+                        <div class="card-servico">
+                            <i class="fa-solid fa-desktop card-servico__icone"></i>
+                            <h3 class="card-servico__titulo">Web</h3>
+                            <p class="card-servico__descricao">Desenvolvimento web, criar sites, e-commerce, portfolio, Landing-pages e outros tipos de produtos.</p>
+                        </div>
+                        <div class="card-servico">
+                            <i class="fa-solid fa-mobile-screen-button card-servico__icone"></i>
+                            <h3 class="card-servico__titulo">Mobile</h3>
+                            <p class="card-servico__descricao">Desenvolvimento mobile, criar aplicações web adaptável para dispositivos móveis.</p>
+                        </div>
+                        <div class="card-servico">
+                            <i class="fa-solid fa-briefcase card-servico__icone"></i>
+                            <h3 class="card-servico__titulo">Freelancer</h3>
+                            <p class="card-servico__descricao">Sou um freelancer Front-end, crio a interface do seu site de forma responsiva, otimizada e estruturada conforme a ideia proposta.</p>
+                        </div>
+                    </div>
+                </section>
+        </section>
+        <section class="secao_projetos" id="projetos">
+            <header class="cabecalho-projeto">
+                <h2 class="cabecalho-projeto__titulo">Projetos</h2>
+            </header>
+            <div class="container-carrosel">
+                    <div class="scroll">
+                        <div class="container-projeto">
+                            <div class="card-carrosel card-01 item">
+                                <i class="fa-brands fa-connectdevelop card-carrosel__icone"></i>
+                                <h3 class="card-carrosel__titulo">página de cadastro com etapas</h3>
+                                <div class="tecnologias">
+                                    <p class="descricao-tecnologias">Tecnologias utilizadas</p>
+                                    <div class="container-tech">
+                                        <i class="fa-brands fa-html5 tech-html"></i>
+                                        <i class="fa-brands fa-css3-alt tech-css"></i>
+                                        <i class="fa-brands fa-square-js tech-js"></i>
+                                    </div>
+                                </div>
+        
+                                <nav class="carrosel-navigation">
+                                    <a href="https://pagina-de-cadastroof.netlify.app/" target="_blank"><button class="carrosel-navigation__site" aria-label="Abrir site do projeto">Site</button></a>
+                                    <a href="https://github.com/ViniciusTorresof/Pagina-de-cadastro" target="_blank"><button class="carrosel-navigation__github" aria-label="Abrir github do projeto">Github</button></a>
+                                </nav>
+                            </div>
+                            <div class="card-carrosel card-02 item">
+                                <i class="fa-brands fa-connectdevelop card-carrosel__icone"></i>
+                                <h3 class="card-carrosel__titulo">Aguarde</h3>
+                                <p class="card-carrosel__descricao">Projeto em fase de <span class="card-carrosel__descricao--destaque">construção</span></p>
+        
+                                <nav class="carrosel-navigation">
+                                    <button class="carrosel-navigation__site" aria-disabled="true" aria-label="Abrir site do projeto">Site</button>
+                                    <button class="carrosel-navigation__github" aria-disabled="true" aria-label="Abrir github do projeto">Github</button>
+                                </nav>
+                            </div>
+                            <div class="card-carrosel card-03 item">
+                                <i class="fa-brands fa-connectdevelop card-carrosel__icone"></i>
+                                <h3 class="card-carrosel__titulo">Aguarde</h3>
+                                <p class="card-carrosel__descricao">Projeto em fase de <span class="card-carrosel__descricao--destaque">construção</span></p>
+              
+                                <nav class="carrosel-navigation">
+                                    <button class="carrosel-navigation__site" aria-disabled="true" aria-label="Abrir site do projeto">Site</button>
+                                    <button class="carrosel-navigation__github" aria-disabled="true" aria-label="Abrir github do projeto">Github</button>
+                                </nav>
+                            </div>
+                            <div class="card-carrosel card-04 item">
+                                <i class="fa-brands fa-connectdevelop card-carrosel__icone"></i>
+                                <h3 class="card-carrosel__titulo">Aguarde</h3>
+                                <p class="card-carrosel__descricao">Projeto em fase de <span class="card-carrosel__descricao--destaque">construção</span></p>
+        
+                                <nav class="carrosel-navigation">
+                                    <button class="carrosel-navigation__site" aria-disabled="true" aria-label="Abrir site do projeto">Site</button>
+                                    <button class="carrosel-navigation__github" aria-disabled="true" aria-label="Abrir github do projeto">Github</button>
+                                </nav>
+                            </div>
+                            <div class="card-carrosel card-05 item">
+                                <i class="fa-brands fa-connectdevelop card-carrosel__icone"></i>
+                                <h3 class="card-carrosel__titulo">Aguarde</h3>
+                                <p class="card-carrosel__descricao">Projeto em fase de <span class="card-carrosel__descricao--destaque">construção</span></p>
+        
+                                <nav class="carrosel-navigation">
+                                    <button class="carrosel-navigation__site" aria-disabled="true" aria-label="Abrir site do projeto">Site</button>
+                                    <button class="carrosel-navigation__github" aria-disabled="true" aria-label="Abrir github do projeto">Github</button>
+                                </nav>
+                            </div>
+                            <div class="card-carrosel card-06 item">
+                                <i class="fa-brands fa-connectdevelop card-carrosel__icone"></i>
+                                <h3 class="card-carrosel__titulo">Aguarde</h3>
+                                <p class="card-carrosel__descricao">Projeto em fase de <span class="card-carrosel__descricao--destaque">construção</span></p>
+        
+                                <nav class="carrosel-navigation">
+                                    <button class="carrosel-navigation__site" aria-disabled="true" aria-label="Abrir site do projeto">Site</button>
+                                    <button class="carrosel-navigation__github" aria-disabled="true" aria-label="Abrir github do projeto">Github</button>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>   
+            </div>
+            <div class="arrow-buttons">
+                <button class="botao-carrosel botao-esquerdo" aria-label="Move carrosel para esquerda"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="botao-carrosel botao-direito" aria-label="Mover carrosel para direita" ><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </section>
+        <section class="secao_contato" id="contato">
+            <header class="cabecalho-contato">
+                <p class="cabecalho-contato__descricao">Estou ansioso para te conhecer <i class="fa-solid fa-bolt icone-descricao"></i></p>
+                <h2 class="cabecalho-contato__titulo">Networking</h2>
+                <h3 class="cabecalho-contato__subtitulo">Como eu poderia te ajudar ?</h3>
+                <p class="cabecalho-contato__texto-informativo">Você pode me enviar um email, conversar diretamente através das minhas redes ou solicitar uma reunião.</p>
+            </header>
+            <section class="bloco-formulario">
+                <h4 class="bloco-formulario__titulo">Marque uma Reunião<i class="fa-solid fa-bolt bloco-formulario__icone"></i></h4>
+                <form class="container-form" action="https://formsubmit.co/vinicius.devof@gmail.com" method="POST">
+                    <input type="text" name="nome" class="contato-input input-nome" placeholder="Nome" aria-label="Digite o seu nome" required>
+                    <input type="text" name="assunto" class="contato-input input-assunto" placeholder="Assunto" aria-label="Digite o Assunto" required>
+                    <input type="email" name="email" class="contato-input input-email" placeholder="Email" aria-label="Digite seu email" required>
+                    <textarea name="mensagem" id="" cols="30" rows="10" class="contato-textarea input-textarea" placeholder="Especifique a sua mensagem (Opicional)" aria-label="Especifique a sua mensagem (Opicional)"></textarea>
+                    <button class="botao__copiar-email" id="botaoCopiar" value="vinicius.devof@gmail.com" type="button" aria-label="Copiar email de Vinícius">Copiar email</button>
+                    <button class="submit" type="submit" aria-label="Marcar reunião com Vinícius">Marcar reunião</button>
+                </form>
+                    <nav class="contato-social__nav">
+                        <ul class="contato-social__lista" role="navigation">
+                            <li class="social__itens">
+                                <a href="https://github.com/ViniciusTorresof" class="social__itens--link" target="_blank"><i class="fa-brands fa-github icone-github"></i></a>
+                            </li>
+                            <li class="social__itens">
+                                <a href="https://www.linkedin.com/in/viniciustorresoficial/" class="social__itens--link" target="_blank"><i class="fa-brands fa-linkedin icone-linkedin"></i></a>
+                            </li>
+                            <li class="social__itens">
+                                <a href="https://www.instagram.com/viniciuss.dev/" class="social__itens--link" target="_blank"><i class="fa-brands fa-instagram icone-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p class="footer-descricao">Vinícius Tôrres &copy; 2022</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/c7d2131b9d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
