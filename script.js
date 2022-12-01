@@ -59,13 +59,13 @@ botaoMenu.addEventListener('touchstart', menuAtivo);
 
 function menuAtivo(evento) {
     if(evento.type === 'touchstart') {
-        evento.preventoDefaukt()
+        evento.preventoDefault()
     }
 
     let navLista = document.getElementById('nav')
     navLista.classList.toggle('active')
 
-    const active = nav.classList.contains('active')
+    const active = navLista.classList.contains('active')
     evento.currentTarget.setAttribute('aria-expanded', active)
 
     if(active) {
