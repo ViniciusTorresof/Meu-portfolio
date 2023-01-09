@@ -334,10 +334,10 @@ body {
 }
 
 .secao_conhecimento .main-skill {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    grid-gap: 20px;
+    display: flex;
     justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
     margin-top: 30px;
 }
 
