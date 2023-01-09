@@ -315,9 +315,8 @@ body {
 .secao_conhecimento {
     width: 100%;
     max-width: 1200px;
-    padding: 0 20px ;
-    margin: 50px auto;
-
+    padding: 0 2rem ;
+    margin: 5rem auto;
     text-align: center;
 }
 
@@ -338,26 +337,20 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     grid-gap: 20px;
-
     justify-content: center;
-
     margin-top: 30px;
 }
 
 .main-skill .card-skill {
-    width: 290px;
-    padding: 30px;
-
-    text-align: left;
-
+    width: 30rem;
+    padding: 1rem 2rem;
+    display: flex;
     border-radius: 5px;
     background-color: #0F1116;
 }
 
 .card-skill .icone-tecnologia {
     font-size: 3rem;
-
-    background-color: #3b3b3b;;
     border-radius: 4px;
     padding: 8px 12px;
 }
@@ -365,11 +358,14 @@ body {
 .card-skill .icone-html {
     color: #fa314a;
 }
-.card-skill .icone-css, .icone-react {
+.card-skill .icone-css, .icone-react, .icone-tailwind {
     color: #0078da;
 }
 .card-skill .icone-js, .icone-ts {
     color: #ffff00;
+}
+.card-skill .icone-bootstrap {
+    color: #ae00ff;
 }
 .card-skill .icone-node {
     color: green;   
@@ -452,169 +448,151 @@ body {
 
 .secao_projetos {
     width: 100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     background-color: #0F1116;
     padding: 30px  0;
-
     position: relative;
 }
 
 .secao_projetos .cabecalho-projeto .cabecalho-projeto__titulo {
-    max-width: 200px;
-    margin: 5px auto 20px auto;
-
     text-align: center;
     text-transform: uppercase;
+    font-weight: 500;
     font-size: 3.5rem;
     color: rgb(218, 218, 218);
-
-    border-bottom: 2px solid #f13709;
+    margin-bottom: 3rem;
 }
 
-.secao_projetos .container-carrosel .scroll {
-    overflow-x: auto;
+.secao_projetos .cabecalho-projeto .cabecalho-projeto__titulo .destaque {
+    border-bottom: .1rem solid #e84c26;
 }
 
-.secao_projetos .container-carrosel .scroll::-webkit-scrollbar {
-   display: none;
-}
-
-.container-carrosel {
-    max-width: 1200px;
-    width: 89%;
-    padding-left: 5px;
+.secao_projetos .container-projeto {
+    max-width: 120rem;
     margin: 0 auto;
-}
-
-.secao_projetos .container-carrosel .scroll .container-projeto {
     display: flex;
-    flex-wrap: row nowrap;
-    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 .container-projeto .card-carrosel {
-    width: 275px;
-    height: 500px;
-
-    padding: 1rem;
-
+    width: 41rem;
+    height: 25rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    flex-shrink: 0;
-
-    text-transform: uppercase;
+    justify-content: center;
     text-align: center;
-
-    background-color: rgb(26, 26, 26);
-    position: relative;
-}
-
-.container-projeto .card-01 {
     background-color: #000;
+    border-top: .7rem solid #f13709;
+    border-radius: .5rem;
+    position: relative;
+    cursor: pointer;
 }
 
-.container-projeto .card-carrosel .card-carrosel__icone {
+.container-projeto .card-carrosel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
-    top: 15px;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-
-    font-size: 2.5rem;
-    color: #f13709;
+    z-index: 1;
+    opacity: .3;
 }
 
-.container-projeto .card-carrosel .card-carrosel__titulo {
-    font-size: 2rem;
-    color: #fff;
-
-    border-bottom: 2px solid #f13709;
-    padding-bottom: 5px;
+.container-projeto .card-carrosel .body {
+   z-index: 2;
 }
 
-
-.container-projeto .card-carrosel .card-carrosel__descricao {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #8b8b8b;
-
-    margin: 10px 0;
-}
-
-.container-projeto .card-carrosel .tecnologias .descricao-tecnologias{
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #8b8b8b;
-    margin-top: 14px;
-}
-
-.container-projeto .card-carrosel .tecnologias .container-tech {
+.container-projeto .card-carrosel .tecnologias  {
     display: flex;
     justify-content: center;
-    gap: 5px;
-    font-size: 2rem;
-    margin: 2px 0 10px 0;
+    gap: .5rem;
+    font-size: 2.5rem;
 }
 
-.container-projeto .card-carrosel .tecnologias .container-tech .tech-html {
+.container-projeto .card-carrosel .tecnologias  .tech-html {
     color: #dd2d01;
 }
-.container-projeto .card-carrosel .tecnologias .container-tech .tech-css {
+.container-projeto .card-carrosel .tecnologias  .tech-css {
     color: #003edb;
 }
-.container-projeto .card-carrosel .tecnologias .container-tech .tech-js {
+.container-projeto .card-carrosel .tecnologias  .tech-js {
     color: #f2ff00;
 }
 
-.container-projeto .card-carrosel .card-carrosel__descricao .card-carrosel__descricao--destaque {
-    color: #e0e0e0;
+.container-projeto .card-carrosel .card-carrosel__titulo {
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-top: .5rem
 }
 
-.container-projeto .card-carrosel .carrosel-navigation .carrosel-navigation__site, .carrosel-navigation__github {
-    width: 100px;
-    height: 40px;
+.container-projeto .card-carrosel .carrosel-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 1rem;
+    animation: up .8s;
+    display: none;
+} 
 
-    border: 1px solid transparent;
-    border-radius: 3px;
+.container-projeto .card-carrosel:hover .carrosel-navigation {
+    display: flex;
+}
 
-    background-color: #fe3300;
+.container-projeto .card-carrosel .carrosel-navigation .botao-card {
+    width: 12rem;
+    height: 3.5rem;
+    border-radius: .5rem;
     color: #fff;
-
     cursor: pointer;
     transition: all .5s;
 }
 
-.container-projeto .card-carrosel .carrosel-navigation .carrosel-navigation__github {
+.container-projeto .card-carrosel .carrosel-navigation .botao-site {
+    background-color: #e84c26;
+}
+
+.container-projeto .card-carrosel .carrosel-navigation .botao-site:hover {
+    background-color: #dd2d01;
+}
+
+.container-projeto .card-carrosel .carrosel-navigation .botao-github {
+    background-color: #0f255f;
+}
+
+.container-projeto .card-carrosel .carrosel-navigation .botao-github:hover {
     background-color: #010f34;
 }
 
-.container-projeto .card-carrosel .carrosel-navigation .carrosel-navigation__site:hover{
-    background-color: #ea6e4f;
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.container-projeto .card-carrosel .carrosel-navigation .carrosel-navigation__github:hover{
-    background-color: #082061;
-}
-
-.secao_projetos .arrow-buttons .botao-carrosel {
-    width: 35px;
-    border-radius: 100%;
-
-    background-color: #f13709;
-    color: #010f34;
+.secao_projetos .botao-github_geral {
+    width: 30rem;
+    height: 4rem;
+    border-radius: .5rem;
+    background-color: #0f255f;
+    color: #fff;
+    margin-top: 3rem;
     cursor: pointer;
-
-    margin-top: 50px;
-    padding: 10px;
+    transition: all .5s;
 }
 
-.secao_projetos .arrow-buttons .botao-esquerdo {
-    margin-right: 10px;
+.secao_projetos .botao-github_geral:hover {
+    background-color: #003edb;
 }
 
 .secao_contato {
@@ -832,6 +810,11 @@ footer {
 
     .secao_servico .cabecalho-servico .cabecalho-servico__titulo {
         font-size: 2.4rem;
+    }
+
+    .container-projeto .card-carrosel {
+        width: 95%;
+        overflow: hidden;
     }
 
     .secao_contato .cabecalho-contato .cabecalho-contato__titulo {
